@@ -30,11 +30,11 @@ namespace Dishes.UI.ConsoleApplication
             {
                 case "MORNING":
                     var menusByMorning = _serviceAppMenu.SearchMenuTimeOfDayByMorning(dishTypes);
-                    Console.WriteLine("Output: {0}", menusByMorning.ConvertToString(o => o.Food));
+                    Console.WriteLine("Output: {0}", menusByMorning.ConvertToString(o => o.Food + "(" + o.QuantityDemanded + ")"));
                     break;
                 case "NIGHT":
                     var menusByNight = _serviceAppMenu.SearchMenuTimeOfDayByNight(dishTypes);
-                    Console.WriteLine("Output: {0}", menusByNight.ConvertToString(o => o.Food));
+                    Console.WriteLine("Output: {0}", menusByNight.ConvertToString(o => o.Food + "(" + o.QuantityDemanded + ")"));
                     break;
                 default:
                     break;

@@ -30,16 +30,18 @@ namespace Dishes.Domain.Services
             foreach (var item in dishTypes)
             {
                 if (item != (int)type)
-                {
                     if (newFoods.Where(w => (int)w.DishType == item).Count() > 0)
                         continue;
-                }
-                var food = lstFilter.Select(o => o)
+
+                var foods = lstFilter.Select(o => o)
                                     .Where(i => (int)i.DishType == item)
                                     .ToList();
-                newFoods.AddRange(food);
+               
+                var food = foods.First();
+                food.QuantityDemanded = food.QuantityDemanded + foods.Count();
+                newFoods.Add(food);
             }
-            return newFoods;
+            return newFoods.Distinct().ToList();
         }
     }
 }

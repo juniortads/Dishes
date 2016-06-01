@@ -11,5 +11,6 @@ namespace Dishes.Domain
         public DishType DishType { get; set; }
         public TimeOfDay TimeOfDay { get; set; }
         public string Food { get; set; }
+        public int QuantityDemanded { get; set; }
     }
 }
