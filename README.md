@@ -11,3 +11,4 @@ Rules:</br>
 7.	In the morning, you can order multiple cups of coffee</br>
 8.	At night, you can have multiple orders of potatoes35</br>
 9.	Except for the above rules, you can only order 1 of each dish type</br>
+</hr>
