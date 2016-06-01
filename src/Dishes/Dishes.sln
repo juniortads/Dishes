@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dishes.Infra.Data.Repositor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dishes.Infra.IoC", "Dishes.Infra.IoC\Dishes.Infra.IoC.csproj", "{42369457-9A6E-4BCD-98E6-C600AB1F5513}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dishes.Utilities", "Dishes.Utilities\Dishes.Utilities.csproj", "{6A6C95B4-0695-4D71-AF26-371C974E39AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{42369457-9A6E-4BCD-98E6-C600AB1F5513}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42369457-9A6E-4BCD-98E6-C600AB1F5513}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42369457-9A6E-4BCD-98E6-C600AB1F5513}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A6C95B4-0695-4D71-AF26-371C974E39AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A6C95B4-0695-4D71-AF26-371C974E39AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A6C95B4-0695-4D71-AF26-371C974E39AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A6C95B4-0695-4D71-AF26-371C974E39AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,5 +71,6 @@ Global
 		{8B50B989-B0C1-4E6D-B403-D0C55EB95680} = {C6BAE383-3E76-4268-BF74-58BD592629EF}
 		{CB542EC2-C19C-4925-B9CA-3A800AC2402E} = {69C4A98F-0733-4E79-80D8-1F1554E1402B}
 		{42369457-9A6E-4BCD-98E6-C600AB1F5513} = {158D0CF3-E4A8-4EF7-87FE-6EEF9A2D3D61}
+		{6A6C95B4-0695-4D71-AF26-371C974E39AB} = {D452695A-6B89-44C6-87CB-C9FCEF04A14E}
 	EndGlobalSection
 EndGlobal

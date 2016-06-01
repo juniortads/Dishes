@@ -34,13 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -48,6 +42,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dishes.Application\Dishes.Application.csproj">
+      <Project>{b7ac6121-03af-410e-b904-d73ef6090b37}</Project>
+      <Name>Dishes.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dishes.Domain\Dishes.Domain.csproj">
+      <Project>{8b50b989-b0c1-4e6d-b403-d0c55eb95680}</Project>
+      <Name>Dishes.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dishes.Infra.IoC\Dishes.Infra.IoC.csproj">
+      <Project>{42369457-9a6e-4bcd-98e6-c600ab1f5513}</Project>
+      <Name>Dishes.Infra.IoC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dishes.Utilities\Dishes.Utilities.csproj">
+      <Project>{6a6c95b4-0695-4d71-af26-371c974e39ab}</Project>
+      <Name>Dishes.Utilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

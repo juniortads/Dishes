@@ -34,8 +34,14 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoryMenu.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dishes.Domain\Dishes.Domain.csproj">
+      <Project>{8b50b989-b0c1-4e6d-b403-d0c55eb95680}</Project>
+      <Name>Dishes.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
